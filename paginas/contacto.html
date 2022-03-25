@@ -1,79 +1,88 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="..//css/estilo.css">
+	<link rel="stylesheet" href="..//css/styles.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/mediaQueries.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 	<title>Contacto</title>
 </head>
 <body>
-	<header class="header">
-		<nav class="header__nav"> 
-			<a href="..//index.html"><img src="..//imagenes/joculog.png"></a>
-			<ul class="header__nav__ul">
-				<li class="header__nav__li"><a href="..//paginas/quienes-somos.html">Quienes somos</a></li>
-				<li class="header__nav__li"><a href="..//paginas/servicios.html">Servicios</a></li>
-				<li class="header__nav__li"><a href="..//paginas/portfolio.html">Portfolio</a></li>
-				<li class="header__nav__li"><a href="..//paginas/contacto.html">Contactanos</a></li>
-			</ul>
-		</nav>
-	</header>
+	 <header class="header">
+	    <nav class="navbar">
+	      <a class="bothome" href="..//index.html"><img src="..//imagenes/joculog.png" class="logo"></a>
+	      <ul class="menu" id="menu">
+	        <li><a href="..//paginas/quienes-somos.html">Quienes somos</a></li>
+	        <li><a href="..//paginas/servicios.html">Servicios</a></li>
+	        <li><a href="..//paginas/portfolio.html">Productos</a></li>
+	        <li><a href="..//paginas/contacto.html">Contactanos</a></li>
+	      </ul>
+	      <img src="..//imagenes/menu.png" class="logomenu">
+	    </nav>
+	 </header>
 
-	<div class="contacto__titulo">
-		<h1>Contactanos</h1>
-	</div>
 
-	<div class="contacto__formulario">
-		<form class="contacto__form">
-			<div class="contacto__formimg">
-				<img src="..//imagenes/joculog.png" width="400px">
-			</div>
-			<div class="contacto__formtexto">
-				<div class="contacto__forminput">
-					<input type="text" name="asunto" placeholder="Asunto">
-				</div>
-				<div class="contacto__forminput">
-					<input type="email" name="email" placeholder="Ingrese su Email">
-				</div>
-				<div class="contacto__forminput">
-					<input type="number" name="numero" placeholder="Ingrese su Telefono">
-				</div>
-				<div class="contacto__forminput">
-					<textarea></textarea>
-				</div>
-				<div class="contacto__forminput">					
-					<input type="submit" name="enviar" placeholder="Enviar">
-				</div>
-			</div>
-		</form>
-	</div>
+	 <div class="contactomain">
+		<div class="contacto__titulo">
+			<h1>Contactanos</h1>
+		</div>
 
-	<div  class="contacto__direccion">
-		<h3>Dirección Av. Las Heras 3999</h3>
-	</div>
+		<div class="contacto__formulario">
+			<form class="contacto__form">
+				<div class="contacto__formimg">
+					<img src="..//imagenes/joculog.png" width="400px">
+				</div>
+				<div class="contacto__formtexto">
+					<div class="contacto__forminput">
+						<input type="text" name="asunto" placeholder="Asunto">
+					</div>
+					<div class="contacto__forminput">
+						<input type="email" name="email" placeholder="Ingrese su Email">
+					</div>
+					<div class="contacto__forminput">
+						<input type="number" name="numero" placeholder="Ingrese su Telefono">
+					</div>
+					<div class="contacto__forminput">
+						<textarea></textarea>
+					</div>
+					<div class="contacto__forminput">					
+						<input type="submit" name="enviar" placeholder="Enviar">
+					</div>
+				</div>
+			</form>
+		</div>
 
-	<div class="contacto__numero">
-		<h4>+54 9 1153242483</h4>
-	</div>
+		<div  class="contacto__direccion">
+			<h3>Dirección Av. Las Heras 3999</h3>
+		</div>
 
-	<div class="contacto__ubicacion">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.4481914562027!2d-58.41638104184627!3d-34.5814882951163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb578cfe06087%3A0x77fe81d1d5469542!2sAv.%20Gral.%20Las%20Heras%203999%2C%20C1425%20ATD%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1645647076002!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		<div class="contacto__numero">
+			<h4>+54 9 1153242483</h4>
+		</div>
+
+		<div class="contacto__ubicacion">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.4481914562027!2d-58.41638104184627!3d-34.5814882951163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb578cfe06087%3A0x77fe81d1d5469542!2sAv.%20Gral.%20Las%20Heras%203999%2C%20C1425%20ATD%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1645647076002!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		</div>
 	</div>
 	
 
-	<footer class="footer">
-		<nav class="footer__nav">
-			<a href="..//index.html"><img src="..//imagenes/joculog.png"></a>
-			<ul class="footer__nav__ul">
-				<li class="footer__nav__li"><a href="https://www.instagram.com/cord.di/">JOCU.DI</a></li>
-				<li class="footer__nav__li">+54 9 1153242483</li>
-			</ul>
-		</nav>	
-	</footer>
+	<div class="footer">
+	    <div class="numero">
+	      <h3>+5491153242483</h3>
+	    </div> 
+	    <h2>JOCU DESIGN</h2>
+	    <div class="social-network">
+	      <i class="fab fa-twitter"></i>
+	      <i class="fab fa-facebook-f"></i>
+	      <i class="fab fa-instagram"></i>
+	    </div>
+	 </div>
 
 </body>
 </html>

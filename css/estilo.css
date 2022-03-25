@@ -13,7 +13,6 @@ ul{
 }
 
 
-/*HEADER*/
 
 
 .header__nav {
@@ -62,7 +61,7 @@ background-color: #202020;
 	color: yellow;
 }
 
-/*FOOTER*/
+
 .footer{
 	display: grid;
 	width: 100%;
@@ -111,8 +110,7 @@ background-color: #202020;
 }
 
 
-/*INDEX*/
-/*LOGO PRINCIPAL*/
+
 .bignav{
 	display: grid;
 }
@@ -130,7 +128,6 @@ background-color: #202020;
 	margin: 100px 0px 100px 0px;
 }
 
-/*LINEA*/
 
 .linea{
 	width: 100%px;
@@ -139,7 +136,6 @@ background-color: #202020;
 	margin: 20px 0px 20px 0px;
 }
 
-/*BIGNAV*/
 
 .bignav{
 	width: 100%;
@@ -191,32 +187,9 @@ background-color: #202020;
 	color: yellow;
 }
 
-/*QUIENES SOMOS*/
 
 
 
-.container {  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-auto-columns: 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "quienessomos__titulo"
-    "quienessomos__texto"
-    "quienessomos__profilecontainer"
-    "."
-    "."
-    ".";
-}
-
-.quienessomos__titulo { grid-area: quienessomos__titulo; }
-
-.quienessomos__texto { grid-area: quienessomos__texto; }
-
-.quienessomos__profilecontainer { grid-area: quienessomos__profilecontainer; }
-
-/*TITULO*/
 
 .quienessomos__titulo {
 	color: yellow;
@@ -226,7 +199,7 @@ background-color: #202020;
 	margin-top: 100px;
 }
 
-/*PARRAFO TITULO*/
+
 .quienessomos__texto p{
 	color: white;
 	width: 50%;
@@ -234,7 +207,7 @@ background-color: #202020;
 	margin: 0 auto;
 }
 
-/*PROFILE*/
+
 
 .quienessomos__profilecontainer{
 	width: 1100px;
@@ -255,9 +228,6 @@ background-color: #202020;
 }
 
 
-/*SERVICIOS*/
-
-/*TITULO*/
 
 .servicios__titulo{
 	color: yellow;
@@ -267,7 +237,7 @@ background-color: #202020;
 	margin-top: 100px;
 }
 
-/*PARRAFO TITULO*/
+
 
 .servicios__texto{
 	color: white;
@@ -276,7 +246,7 @@ background-color: #202020;
 	margin: 20px auto 20px auto;
 }
 
-/*SERVICIOS NAV*/
+
 
 
 .servicios__navstand{
@@ -326,9 +296,7 @@ background-color: #202020;
 	display: none;
 }
 
-/*PORTFOLIO*/
 
-/*TITULO*/
 
 .portfolio__titulo{
 	color: yellow;
@@ -338,7 +306,7 @@ background-color: #202020;
     margin: 68px auto 0px auto;
 }
 
-/*PARRAFO TITULO*/
+
 
 .portfolio__texto p{
 	color: white;
@@ -347,7 +315,6 @@ background-color: #202020;
 	margin: 0px auto 20px auto;
 }
 
-/*PORFOLIO NAV*/
 
 .portfolio__nav{
 	width: 100%;
@@ -409,9 +376,6 @@ background-color: #202020;
 }
 
 
-/*CONTACTO*/
-
-/*TITULO*/
 
 .contacto__titulo{
 	color: yellow;
@@ -497,3 +461,4 @@ background-color: #202020;
 	justify-content: center;
     margin: 0px auto 50px auto;
 }
+
