@@ -52,9 +52,17 @@ body {
   display: none;
 }
 
-.navbar .logomenu{
-  display: inline-flex;
-  width: 0.1px;
+.respmenu nav{
+  display: none;
+}
+.respmenu input{
+  display: flex;
+  height: 0.1px;
+}
+
+.respmenu i{
+  display: flex;
+  height: 0.1px;
 }
 
 
@@ -85,6 +93,7 @@ body {
   margin: 30px 15%;
   width: 70%;
   align-self: center;
+
 }
 
 .main .info p {
@@ -148,7 +157,7 @@ body {
   font-family: 'raleway', sans-serif;
   text-align: center;
   margin-top: 20px;
-  font-size: 150%;
+  font-size: 120%;
   color: yellow;
   grid-column: 4/8;
   grid-row: 1;
@@ -208,7 +217,7 @@ body {
   background-color: #121212;
   max-width: 100%;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 120px 100px 75px 75px 75px 75px 100px;
+  grid-template-rows: 120px 100px 100px 100px 100px 100px 100px;
   position: relative;
 }
 
@@ -244,6 +253,7 @@ body {
   grid-column: 1/11;
   grid-row: 3;
   background-image: url("..//imagenes/render1.jpg");
+  background-position: center;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -458,7 +468,7 @@ body {
   grid-row: 7;
   margin: auto;
 }
-@media only screen and (max-width: 415px)  {
+@media only screen and (max-width: 581px)  {
   
   .navbar {
     background-color: #202020;
@@ -476,23 +486,73 @@ body {
     width: 30px;
     grid-column: 1 / 2;
   }
-  .navbar .logomenu{
-    grid-column: 8/9;
-    grid-row: 1;
-    width: 30px;
-    height: 30px;
-    margin: 10px;
-  }
   .navbar {
     position: relative;
+    max-height: 50px;
   }
   .navbar .menu{
     display: none;
   }
 
+  .respmenu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    border-bottom: 1px solid yellow;
+    max-width: 200px;
+    background: #black;
+    position: relative;
+  }
+
+  .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+  }
+
+  .respmenu .fa-bars, .respmenu .fa-times {
+    font-size: 30px;
+    pointer-events: none;
+  }
+
+  .respmenu input[type="checkbox"] {
+    opacity: 0;
+  }
+
+  .respmenu {
+    color: white;
+    position: relative;
+    min-height: 30px;
+    background-color: black;
+
+  }
+
+
+  .respmenu nav {
+    display: none;
+  }
+
+  .respmenu input:checked ~ nav {
+    display: inline-flex;
+  }
+
+  .respmenu input:checked ~ .fa-bars {
+    display: none;
+  }
+
+  .respmenu input:not(:checked) ~ .fa-times {
+    display: none;
+  }
+
 
   .main {
-    max-width: 480px;
+    max-width: 580px;
     background-image: linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .9)) , url("..//imagenes/render1.jpg");
     background-size: cover;
     display: grid;
@@ -575,7 +635,7 @@ body {
     max-width: 100%;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 120px 200px 300px 300px 300px 450px;
+    grid-template-rows: 120px 200px 300px 300px 300px 500px;
     position: relative;
   }
 
@@ -615,16 +675,17 @@ body {
     display: inline-block;
     align-items: center;
     margin-bottom: 20px;
-    margin-top: 30px;
+    margin-top: 100px;
   }
   .quienessomos__profileimg img {
     background: none;
     margin: auto;
-    width: 80%;
+    width: 70%;
     grid-column: 3/9;
     grid-row: 3/4;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
   }
 
   .quienessomos__profiletext{

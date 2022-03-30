@@ -11,35 +11,41 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
   <header class="header">
     <nav class="navbar">
       <img src="imagenes/joculog.png" class="logo">
-      <ul class="menu" id="menu">
+        <ul class="menu" id="menu">
+          <li><a  href="paginas/quienes-somos.html">Quienes somos</a></li>
+          <li><a href="paginas/servicios.html">Servicios</a></li>
+          <li><a href="paginas/portfolio.html">Productos</a></li>
+          <li><a href="paginas/contacto.html">Contactanos</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <div class="respmenu">
+    <input type="checkbox">
+    <i class="fas fa-bars"></i>
+    <i class="fas fa-times"></i>
+    <nav>
+      <ul>
         <li><a  href="paginas/quienes-somos.html">Quienes somos</a></li>
         <li><a href="paginas/servicios.html">Servicios</a></li>
         <li><a href="paginas/portfolio.html">Productos</a></li>
         <li><a href="paginas/contacto.html">Contactanos</a></li>
       </ul>
-      <img src="imagenes/menu.png" class="logomenu">
     </nav>
-  </header>
+  </div>
 
 
 
   <main class="main">
-      <div class="navbarmain">
-         <ul class="menu" id="menu">
-          <li><a href="paginas/quienes-somos.html">Quienes somos</a></li>
-          <li><a href="paginas/servicios.html">Servicios</a></li>
-          <li><a href="paginas/portfolio.html">Productos</a></li>
-          <li><a href="paginas/contacto.html">Contactanos</a></li>
-         </ul>
-      </div>
     <div class="info">
-      <img src="imagenes/jocu.png">
-      <p>Somos Jocu, un estudio interesado en darle realidad a tu proyectos a travez del diseño.</p>
+      <img class="animate__animated animate__backInLeft" src="imagenes/jocu.png">
+      <p class="animate__animated animate__backInRigth">Somos Jocu, un estudio interesado en darle realidad a tu proyectos a travez del diseño.</p>
     </div>
   </main>
 
