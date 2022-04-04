@@ -11,60 +11,6 @@ body {
 .fas {
   font-size: 1.2em;
 }
-.navbar {
-  background-color: #202020;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  align-items: center;
-  flex-wrap: wrap;
-}
-.navbar .logo {
-  height: 30px;
-  width: 30px;
-  grid-column: 2 / 3;
-  margin: 10px;
-}
-.navbar .menu {
-  grid-column: 3 / 7;
-  justify-content: center;
-  display: flex;
-}
-.navbar ul li {
-  margin-right: 3em;
-  list-style: none;
-}
-
-.navbar ul li a {
-  text-decoration: none;
-  color: #757575;
-  cursor: pointer;
-}
-
-.navbar .bothome{
- grid-column: 2/3;
- width: 30px;
-}
-
-.navbar a:hover {
-  color: yellow;
-}
-.navbar .menu-bar {
-  display: none;
-}
-
-.respmenu nav{
-  display: none;
-}
-.respmenu input{
-  display: flex;
-  height: 0.1px;
-}
-
-.respmenu i{
-  display: flex;
-  height: 0.1px;
-}
-
 
 
 .main {
@@ -78,9 +24,7 @@ body {
   position: relative;
 }
 
-.navbarmain{
-  display: none;
-}
+
 .main .info {
   grid-column: 4 / 8;
   grid-row: 2 / 7;
@@ -468,7 +412,7 @@ body {
   grid-row: 7;
   margin: auto;
 }
-@media only screen and (max-width: 581px)  {
+@media only screen and (max-width: 581px)  /*{
   
   .navbar {
     background-color: #202020;

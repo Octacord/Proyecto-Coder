@@ -4,7 +4,6 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="..//css/styles.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -12,91 +11,104 @@
 	<link rel="stylesheet" href="css/mediaQueries.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/mediaQueries.css">
 	<title>Contacto</title>
 </head>
 <body>
-	<header class="header">
-	    <nav class="navbar">
-	      <a class="bothome" href="..//index.html"><img src="..//imagenes/joculog.png" class="logo"></a>
-	        <ul class="menu" id="menu">
-	          <li><a  href="..//paginas/quienes-somos.html">Quienes somos</a></li>
-	          <li><a href="..//paginas/servicios.html">Servicios</a></li>
-	          <li><a href="..//paginas/portfolio.html">Productos</a></li>
-	          <li><a href="..//paginas/contacto.html">Contactanos</a></li>
-	        </ul>
-	    </nav>
-  	</header>
-
-  	<div class="respmenu">
-	    <input type="checkbox">
-	    <i class="fas fa-bars"></i>
-	    <i class="fas fa-times"></i>
-	    <nav>
-	      <ul>
-	        <li><a  href="..//paginas/quienes-somos.html">Quienes somos</a></li>
-	        <li><a href="..//paginas/servicios.html">Servicios</a></li>
-	        <li><a href="..//paginas/portfolio.html">Productos</a></li>
-	        <li><a href="..//paginas/contacto.html">Contactanos</a></li>
-	      </ul>
-	    </nav>
-  	</div>
+	<div class="container-fluid">
+		<div class="row">
+	      <header class="header col-12">
+	        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+	          <div class="container-fluid">
+	            <a class="navbar-brand" href="..//index.html">Jocu</a>
+	            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	              <span class="navbar-toggler-icon"></span>
+	            </button>
+	            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	              <div class="navbar-nav">
+	                <a class="nav-link" href="..//paginas/quienes-somos.html">Quienes somos</a>
+	                <a class="nav-link" href="..//paginas/servicios.html">Servicios</a>
+	                <a class="nav-link" href="..//paginas/portfolio.html">Portfolio</a>
+	                <a class="nav-link" href="..//paginas/contacto.html">Contacto</a>
+	              </div>
+	            </div>
+	          </div>
+	        </nav>
+	      </header>
+	    </div>  
 
 
-	 <div class="contactomain">
-		<div class="contacto__titulo">
+	<div class="row justify-content-center">
+	 <div class="contactomain col-6 justify-content-center">
+		<div class="contacto__titulo text-center">
 			<h1>Contactanos</h1>
 		</div>
 
 		<div class="contacto__formulario">
-			<form class="contacto__form">
+			<form class="contacto__form text-center">
 				<div class="contacto__formimg">
-					<img class="animate__animated animate__fadeIn" src="..//imagenes/joculog.png" width="400px">
+					<img class="animate__animated animate__fadeIn" src="..//imagenes/joculog.png" width="200px">
 				</div>
-				<div class="contacto__formtexto">
-					<div class="contacto__forminput">
-						<input type="text" name="asunto" placeholder="Asunto">
-					</div>
-					<div class="contacto__forminput">
-						<input type="email" name="email" placeholder="Ingrese su Email">
-					</div>
-					<div class="contacto__forminput">
-						<input type="number" name="numero" placeholder="Ingrese su Telefono">
-					</div>
-					<div class="contacto__forminput">
-						<textarea></textarea>
-					</div>
-					<div class="contacto__forminput">					
-						<input type="submit" name="enviar" placeholder="Enviar">
-					</div>
+				<div class="mb-3">
+				  <label for="exampleFormControlInput1" class="form-label">Email</label>
+				  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
 				</div>
+				<div class="mb-3">
+				  <label for="exampleFormControlTextarea1" class="form-label">Numero</label>
+				  <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+				</div>
+				<div class="mb-3">
+				  <label for="exampleFormControlTextarea1" class="form-label">Asunto</label>
+				  <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+				</div>
+				<div class="mb-3">
+				  <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
+				  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+				</div>
+				<button type="submit" class="btn btn-dark">Submit</button>
 			</form>
 		</div>
+	</div>
 
-		<div  class="contacto__direccion">
-			<h3>Dirección Av. Las Heras 3999</h3>
-		</div>
+	<div class="row">
 
-		<div class="contacto__numero">
-			<h4>+54 9 1153242483</h4>
-		</div>
-
-		<div class="contacto__ubicacion">
+		<div class="contacto__ubicacion col-6">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.4481914562027!2d-58.41638104184627!3d-34.5814882951163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb578cfe06087%3A0x77fe81d1d5469542!2sAv.%20Gral.%20Las%20Heras%203999%2C%20C1425%20ATD%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1645647076002!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 		</div>
+
+		<div class="direcciones col-6 text-center justify-content-center">
+			<div  class="contacto__direccion">
+				<h3>Dirección Av. Las Heras 3999</h3>
+			</div>
+
+			<div class="contacto__numero">
+				<h4>+54 9 1153242483</h4>
+			</div>
+		</div>
+
+		
 	</div>
 	
 
-	<div class="footer">
-	    <div class="numero">
-	      <h3>+5491153242483</h3>
-	    </div> 
-	    <h2>JOCU DESIGN</h2>
-	    <div class="social-network">
+	 <div class="row justify-content-center">
+	    <div class="col order-first text-center">
+	      +5491153242483
+	    </div>
+	    <div class="col text-center">
+	      JOCU DESIGN
+	    </div>
+	    <div class="col order-last text-center">
 	      <i class="fab fa-twitter"></i>
-	      <i class="fab fa-facebook-f"></i>
-	      <i class="fab fa-instagram"></i>
+		    <i class="fab fa-facebook-f"></i>
+		    <i class="fab fa-instagram"></i>
 	    </div>
 	 </div>
+</div> 
 
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
