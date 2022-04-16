@@ -18,6 +18,7 @@ body{
 	display: inline-flex;
 	background-color: #f8f9fa;
 	width: 100%;
+	padding: 0;
 		nav {
 		 width: 100%;
 		 height: 56px;
@@ -50,34 +51,6 @@ body{
 		}
 }
 
-.servicios__titulo{
-	color: black;
-	font-size: calc(1.375rem + 1.5vw);
-	display: flex;
-	justify-content: center;
-	margin: 50px;
-}
-
-.serviciosmain{
-	display: inline-block;
-	text-align: center;
-		.servicios__navstand{
-		margin: 15px auto;
-		width: 75%;
-		}
-		.servicios__navproductos{
-		margin: 15px auto;
-		width: 75%;
-		}
-		.servicios__navinteriores{
-		margin: 15px auto;
-		width: 75%;
-		}
-		.servicios__navgrafico{
-		margin: 15px auto;
-		width: 75%;
-		}
-}
 
 .fot {
 	display: inline-flex;
@@ -89,4 +62,126 @@ body{
 		}		
 }
 
+.fas {
+  font-size: 1.2em;
+}
+
+
+.main {
+  	height: 80%;
+  	background-image: linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .9)) , url("..//imagenes/render1.jpg");
+  	background-size: cover;
+  	max-width: 100%;
+  	display: grid;
+  	grid-template-columns: repeat(10, 1fr);
+  	grid-template-rows: repeat(8, 1fr);
+  	position: relative;
+		.info {
+		grid-column: 4 / 8;
+		grid-row: 2 / 7;
+		color: #fff;
+		z-index: 1;
+		}
+		img {
+			background: none;
+			margin: 30px 15%;
+			width: 70%;
+			align-self: center;
+		}
+		p {
+		font-family: 'raleway', sans-serif;
+		text-align: center;
+		margin: none 107px;
+		font-size: 150%;
+		}
+}
+
+.quienessomos {
+  height: 100%;
+  max-width: 100%;
+  		.quienessomos__titulo {
+  			font-family: 'raleway', sans-serif;
+  			text-align: center;
+  			margin-top: 20px;
+  			align-items: center;
+  			justify-content: center;
+		}
+		.quienessomos__texto {
+  			text-align: center;
+  			display: flex;
+  			align-items: center;
+  			justify-content: center;
+  			padding: 10px;
+		}
+		img {
+			background: none;
+			margin: auto 5px auto 5px;
+			width: 200px;
+		}
+		.quienessomos__profiletext {
+  			margin: auto 5px auto 5px;
+  			padding: 20px;
+  			display: inline-block;
+  			text-align: center;
+  				h3{
+  					margin: 10px;}
+		}
+}
+
+
+
+.serviciosmain{
+	text-align: center;
+	margin: auto;
+		.servicios__titulo{
+			color: black;
+			font-size: calc(1.375rem + 1.5vw);
+			display: flex;
+			justify-content: center;
+			margin: 50px auto;
+		}
+		.servicios__navstand{
+			display: inline-block;
+			justify-content: center;
+			align-content: center;
+			margin: auto;
+			width: 75%;
+		}
+		.servicios__navproductos{
+			display: inline-block;
+			justify-content: center;
+			align-content: center;
+			margin: auto;
+			width: 75%;
+		}
+		.servicios__navinteriores{
+			display: inline-block;
+			justify-content: center;
+			align-content: center;
+			margin: auto;
+			width: 75%;
+		}
+		.servicios__navgrafico{
+			display: inline-block;
+			justify-content: center;
+			align-content: center;
+			margin: auto;
+			width: 75%;
+		}
+}
+
+.portfoliomain {
+	.portfolio__navstand{
+		margin-bottom: 40px;
+	}
+	.portfolio__navproductos{
+		margin-bottom: 40px;
+	}
+	.portfolio__navinteriores{
+		margin-bottom: 40px;
+	}
+	.portfolio__navgrafico{
+		margin-bottom: 40px;
+	}
+}
 

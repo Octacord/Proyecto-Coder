@@ -10,11 +10,12 @@ body {
 .header {
   display: inline-flex;
   background-color: #f8f9fa;
-  width: 100%; }
+  width: 100%;
+  padding: 0; }
   .header nav {
     width: 100%;
     height: 56px;
-    display: flex;}
+    display: flex; }
     .header nav .navbar-nav {
       margin: 10px;
       align-items: center;
@@ -30,43 +31,117 @@ body {
     .header nav a {
       display: inline-block;
       padding: 6px 12px;
-      text-decoration: none;
-      color: black; }
+      text-decoration: none; }
     .header nav .joculogo {
       font-size: 20px;
       display: flex;
       margin-top: 6px; }
 
-.servicios__titulo {
-  color: black;
-  font-size: calc(1.375rem + 1.5vw);
-  display: flex;
-  justify-content: center;
-  margin: 50px; }
-
-.serviciosmain {
-  display: inline-block;
-  text-align: center; }
-  .serviciosmain .servicios__navstand {
-    margin: 15px auto;
-    width: 75%; }
-  .serviciosmain .servicios__navproductos {
-    margin: 15px auto;
-    width: 75%; }
-  .serviciosmain .servicios__navinteriores {
-    margin: 15px auto;
-    width: 75%; }
-  .serviciosmain .servicios__navgrafico {
-    margin: 15px auto;
-    width: 75%; }
-
 .fot {
   display: inline-flex;
-  margin: auto ;
-  padding: 5px;
-  width: 100%;
-}
-
-.fot div{
   margin: auto;
-}
+  padding: 5px;
+  width: 100%; }
+  .fot div {
+    margin: auto; }
+
+.fas {
+  font-size: 1.2em; }
+
+.main {
+  height: 80%;
+  background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.9)), url("..//imagenes/render1.jpg");
+  background-size: cover;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  position: relative; }
+  .main .info {
+    grid-column: 4 / 8;
+    grid-row: 2 / 7;
+    color: #fff;
+    z-index: 1; }
+  .main img {
+    background: none;
+    margin: 30px 15%;
+    width: 70%;
+    align-self: center; }
+  .main p {
+    font-family: 'raleway', sans-serif;
+    text-align: center;
+    margin: none 107px;
+    font-size: 150%; }
+
+.quienessomos {
+  height: 100%;
+  max-width: 100%; }
+  .quienessomos .quienessomos__titulo {
+    font-family: 'raleway', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center; }
+  .quienessomos .quienessomos__texto {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; }
+  .quienessomos img {
+    background: none;
+    margin: auto 5px auto 5px;
+    width: 200px; }
+  .quienessomos .quienessomos__profiletext {
+    margin: auto 5px auto 5px;
+    padding: 20px;
+    display: inline-block;
+    text-align: center; }
+    .quienessomos .quienessomos__profiletext h3 {
+      margin: 10px; }
+
+.serviciosmain {
+  text-align: center;
+  margin: auto; }
+  .serviciosmain .servicios__titulo {
+    color: black;
+    font-size: calc(1.375rem + 1.5vw);
+    display: flex;
+    justify-content: center;
+    margin: 50px auto; }
+  .serviciosmain .servicios__navstand {
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    width: 75%; }
+  .serviciosmain .servicios__navproductos {
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    width: 75%; }
+  .serviciosmain .servicios__navinteriores {
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    width: 75%; }
+  .serviciosmain .servicios__navgrafico {
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    width: 75%; }
+
+.portfoliomain .portfolio__navstand {
+  margin-bottom: 40px; }
+
+.portfoliomain .portfolio__navproductos {
+  margin-bottom: 40px; }
+
+.portfoliomain .portfolio__navinteriores {
+  margin-bottom: 40px; }
+
+.portfoliomain .portfolio__navgrafico {
+  margin-bottom: 40px; }
