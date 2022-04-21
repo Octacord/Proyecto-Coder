@@ -1,5 +1,16 @@
 $vista:mobile;
 
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+
 body{
 	margin: 0px;
 	margin: 0px;
@@ -16,7 +27,7 @@ body{
 
 .header{
 	display: inline-flex;
-	background-color: #f8f9fa;
+	background-color: $light;
 	width: 100%;
 	padding: 0;
 		nav {
@@ -129,7 +140,14 @@ body{
 }
 
 
-
+@mixin servicios {
+		display: inline-block;
+		justify-content: center;
+		align-content: center;
+		margin: auto;
+		width: 75%;
+	
+}
 .serviciosmain{
 	text-align: center;
 	margin: auto;
@@ -141,32 +159,16 @@ body{
 			margin: 50px auto;
 		}
 		.servicios__navstand{
-			display: inline-block;
-			justify-content: center;
-			align-content: center;
-			margin: auto;
-			width: 75%;
+			@include servicios
 		}
 		.servicios__navproductos{
-			display: inline-block;
-			justify-content: center;
-			align-content: center;
-			margin: auto;
-			width: 75%;
+			@include servicios
 		}
 		.servicios__navinteriores{
-			display: inline-block;
-			justify-content: center;
-			align-content: center;
-			margin: auto;
-			width: 75%;
+			@include servicios
 		}
 		.servicios__navgrafico{
-			display: inline-block;
-			justify-content: center;
-			align-content: center;
-			margin: auto;
-			width: 75%;
+			@include servicios
 		}
 }
 

@@ -1,0 +1,9 @@
+.main {
+	@extend .info
+	> img {
+		@extend .animate__animated animate__backInLeft
+	}
+	> p {
+		@extend .animate__animated animate__backInRigth
+	}
+}
